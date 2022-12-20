@@ -1,0 +1,239 @@
+libsocket6-perl (0.29-1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 24 Nov 2022 07:22:06 +0800
+
+libsocket6-perl (0.29-1) unstable; urgency=medium
+
+  * Import upstream version 0.29.
+  * Fix Contact in debian/upstream/metadata.
+  * Update years of upstream copyright.
+  * Drop debian/libsocket6-perl.examples which installed two diffs.
+  * Refresh ipv6_constants.patch (offset).
+  * Declare compliance with Debian Policy 4.2.1.
+  * Remove trailing whitespace from debian/*.
+  * Add autom4te.cache/ to debian/clean.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 21 Oct 2018 21:24:29 +0200
+
+libsocket6-perl (0.28-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Florian Schlichting ]
+  * Import upstream version 0.28
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Add /me to Uploaders.
+  * Declare compliance with Debian Policy 4.1.5.
+  * Bump debhelper compatibility level to 10.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 30 Jul 2018 16:40:11 +0200
+
+libsocket6-perl (0.27-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * Simplify BTS URL.
+
+  [ Florian Schlichting ]
+  * Add debian/upstream/metadata
+  * Import upstream version 0.27
+  * Update years of upstream copyright
+  * Refresh ipv6_constants.patch (offset)
+  * Declare compliance with Debian Policy 3.9.8
+  * Enable all hardening flags
+  * Mark package autopkgtest-able
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 01 May 2016 23:36:56 +0200
+
+libsocket6-perl (0.25-1) unstable; urgency=low
+
+  * Imported Upstream version 0.25
+  * New maintainer (Closes: #738885)
+  * Bump standards version to 3.9.5 (no changes)
+  * [11eaa0be] debian/control
+                  + Add homepage field
+  * Install socket6(3) manpage (Closes: #694083)
+  * [8ee3ba01] Import patch to add missing IPv6 constants
+		(Closes: #569981 LP: #522191)
+		Thanks to David Madore for the patch
+  * [c5f9120a] Update debian/watch
+  * [71f53f90] debian/control
+		  + Add VCS fields
+  * [24b9fbe0] debian/copyright
+                  + Convert to machine readable format
+  * [a2d90858] Use https://metacpan.org/release/Socket6 in
+		d/control, d/copyright, d/watch
+  * [1a66281f] Remove obsolete postinst script
+  * [748e7406] Correct licence name to BSD-3-Clause
+  * [c0eeedec] Complete copyrights for Upstream sources
+  * [f01ff881] Move debian/* copyright to end and complete all
+	       	copyright holders
+  * [e4c2b323] Reduce debian/rules to minimal format
+  * [ef54d313] Add debian/clean
+  * [60cc876d] Add debian/libsocket6-perl.examples
+  * [362ba811] debian/control
+		  + Modify build-depends
+		  + Remove perl-base from Depends
+		  + Modify description to include the module name
+  * [a8b2cf87] Remove unneeded README.Debian
+  * [b527fae1] Remove override and add build-system to debian/rules
+
+ -- Daniel Lintott <daniel@serverb.co.uk>  Sun, 16 Feb 2014 12:07:30 +0000
+
+libsocket6-perl (0.23+ds-0+nmu1) unstable; urgency=low
+
+  [ Cyril Brulebois ]
+  * Non-maintainer upload.
+  * Switch to upstream tarball, using “ds” for “debian source” as a
+    suffix since dak wouldn't appreciate different tarballs having
+    the same name.
+  * Add watch file.
+  * Drop dbs from build-depends, and kill some dbs bits in debian/rules,
+    adjusting clean accordingly (closes: #576062).
+
+  [ Robert Luberda ]
+  * Prepare this NMU based on Cyril's version from #576062 in order to
+    get rid of dbs build-dependency. Upload it to DELAYED/10.
+  * Switch to the 3.0 (quilt) source format.
+  * Switch to debhelper v9 and its tiny rules format.
+  * Bump Standards-Version to 3.9.4.
+
+ -- Robert Luberda <robert@debian.org>  Sun, 22 Sep 2013 12:57:43 +0200
+
+libsocket6-perl (0.23-1) unstable; urgency=low
+
+  * New upstream release. (closes: #531009)
+    - Fix "libsocket6-perl AF_INET6 and PF_INET6 check failed" (Closes: #505431)
+  * Standards-Version: 3.8.3.0.
+  * debian/preinst,postrm: removed because this file does not make sense.
+
+ -- Masahito Omote <omote@debian.org>  Sat, 23 Jan 2010 02:32:12 +0000
+
+libsocket6-perl (0.20-1) unstable; urgency=low
+
+  * New upstream release. (closes: Bug#480464)
+  * Standards-Version: 3.7.3.0.
+  * debian/compat: set 7 and Build-Depends: debhelper (>=7).
+
+ -- Masahito Omote <omote@debian.org>  Mon, 12 May 2008 00:20:05 +0900
+
+libsocket6-perl (0.19-1) unstable; urgency=low
+
+  * New upstream release. (closes: Bug#357169)
+  * Standards-Version: 3.6.2.2
+
+ -- Masahito Omote <omote@debian.org>  Fri, 17 Mar 2006 10:34:11 +0900
+
+libsocket6-perl (0.17-1) unstable; urgency=low
+
+  * New upstream release. (closes: Bug#284823)
+  * Standards-Version: 3.6.1.1
+
+ -- Masahito Omote <omote@debian.org>  Sun, 12 Dec 2004 12:54:45 +0900
+
+libsocket6-perl (0.11.99-1) unstable; urgency=low
+
+  * Rafael's getipnodeby{name|addr} support version. Because I cannot judge
+    he decide to fork of Socket6 in CPAN, so I decide to version to 0.11.99.
+    New libio-socket-inet6-perl needs Rafael's Socket6.
+    (closes: Bug#204389)
+  * Drop my INET6.pm. These are inherited to libio-socket-inet6-perl.
+  * Build-Depends: dbs.
+  * Standards-Version: 3.6.0
+
+ -- Masahito Omote <omote@debian.org>  Sun, 10 Aug 2003 21:13:28 +0900
+
+libsocket6-perl (0.11-6) unstable; urgency=low
+
+  * Move INET6.pm to examples for transition. I prepare to ITP
+    libio-socket-inet6-perl by Rafael Martinez as soon as possible
+    after entering in CPAN.
+    (See http://www.ee.ethz.ch/~slist/mrtg-developers/msg00172.html
+     and http://www.ee.ethz.ch/~slist/mrtg-developers/msg00174.html
+     for more details)
+    If you want to use INET6.pm please copy it by yourself.
+  * Bump Standards-Version to 3.5.10.0.
+  * Move section from interpreters to perl.
+
+ -- Masahito Omote <omote@debian.org>  Wed, 28 May 2003 23:21:02 +0900
+
+libsocket6-perl (0.11-5) unstable; urgency=low
+
+  * Fix address separation bug in INET6.pm. (closes: Bug#180450)
+  * Update Standards-Version to 3.5.8.0.
+
+ -- Masahito Omote <omote@debian.org>  Mon, 17 Feb 2003 16:20:11 +0900
+
+libsocket6-perl (0.11-4) unstable; urgency=low
+
+  * Sync with NMU. Rebuild on perl 5.8.0. (closes: Bug#158665)
+  * Change Build-Depends to perl 5.8.0.
+  * update Standards-Version to 3.5.7.0.
+
+ -- Masahito Omote <omote@debian.org>  Wed, 25 Sep 2002 08:39:57 +0900
+
+libsocket6-perl (0.11-3.1) unstable; urgency=low
+
+  * NMU for perl 5.8.
+  * Bump perl build-dependency to >= 5.8.0-7 (closes: #158665).
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 30 Aug 2002 23:56:11 +0100
+
+libsocket6-perl (0.11-3) unstable; urgency=high
+
+  * INET.pm: fix typo. (closes: Bug#148078)
+  * INET.pm: move to /usr/share/perl5/IO/Socket/INET6.pm (closes: Bug#148340)
+  * Change maintainer's mail address.
+
+ -- Masahito Omote <omote@debian.org>  Tue, 28 May 2002 10:10:47 +0900
+
+libsocket6-perl (0.11-2) unstable; urgency=low
+
+  * Used dbs_make.
+  * debian/rules: change dbs style.
+  * INET.pm(IO::Socket::INET): add support for Socket6.pm, this is based on
+    KAME Project's Socket.pm(IO::Socket::INET). I adopted this code to perl
+    5.6.1 but this poring may makes some serious problems. If some problems
+    are occurred, please send BTS.
+    (thanks to paulvt@debian.org)
+  * debian/copyright: add INET.pm license, upstream URI.
+  * debian/control: add Depends perl-base.
+
+ -- Masahito Omote <omote@debian.org>  Fri, 24 May 2002 21:19:06 +0900
+
+libsocket6-perl (0.11-1) unstable; urgency=medium
+
+  * New upstream release which fixes buffer overflow problem in
+    getnameinfo.c. (closes: Bug#118772)
+  * debian/rules: make simple, and remove obsolete targets.
+  * debian/changelog: remove emacs options.
+
+ -- Masahito Omote <omote@sapmed.ac.jp>  Sun, 18 Nov 2001 00:48:22 +0900
+
+libsocket6-perl (0.10-2) unstable; urgency=low
+
+  * debian/control: Revised in Description. (closes: Bug#109359)
+  * debian/control: Delete usage in extended description, see README.
+
+ -- Masahito Omote <omote@sapmed.ac.jp>  Thu, 23 Aug 2001 14:22:49 +0900
+
+libsocket6-perl (0.10-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Masahito Omote <omote@sapmed.ac.jp>  Thu,  8 Jul 2001 13:56:00 +0900

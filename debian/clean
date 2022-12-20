@@ -1,0 +1,6 @@
+config.h
+config.log
+config.pl
+config.status
+gailookup.pl
+autom4te.cache/
